@@ -1,11 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://comic.naver.com/webtoon/weekday.nhn'
+url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=sun'
 html = requests.get(url)
 soup = BeautifulSoup(html.text, 'html.parser')
-day = soup.select('div.col col_selected')
-#title = day.select('div.thumb')
-print(day)
-#for i in title:
-#    print(i.select_one('a > em').text.strip())
+title_list = soup.select('ul.img_list')
+for i in title_list:
+    print(i.select_one('dt > a').text.strip())
