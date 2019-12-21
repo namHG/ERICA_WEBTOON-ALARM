@@ -14,3 +14,4 @@ for i in title_list:
     print(i.select_one('dt > a').text.strip())
 
 url을 바꾸면 요일별 웹툰의 제목을 가져올 수 있다.
+url.txt에 월요일 웹툰부터 일요일 웹툰 페이지의 url이 저장되어있다. 
