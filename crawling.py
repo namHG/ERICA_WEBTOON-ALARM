@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=sun'
+url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=fri'
 html = requests.get(url)
 soup = BeautifulSoup(html.text, 'html.parser')
 title_list = soup.select('ul.img_list')
