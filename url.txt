@@ -1,0 +1,14 @@
+monday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=mon
+tuesday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=tue
+wednesday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=wed
+thursday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=thu
+friday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=fri
+saturday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=sat
+sunday
+url = https://comic.naver.com/webtoon/weekdayList.nhn?week=sun
