@@ -2,16 +2,7 @@
 2019018795 소프트웨어학부 남현기
 
 crawling.py : 웹툰의 제목을 알려준다.
+update_check.py : 웹툰이 업데이트가 되었는지 알려준다.
 
-import requests
-from bs4 import BeautifulSoup
-
-url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=fri'
-html = requests.get(url)
-soup = BeautifulSoup(html.text, 'html.parser')
-title_list = soup.select('ul.img_list')
-for i in title_list:
-    print(i.select_one('dt > a').text.strip())
-
-url을 바꾸면 요일별 웹툰의 제목을 가져올 수 있다.
-url.txt에 월요일 웹툰부터 일요일 웹툰 페이지의 url이 저장되어있다. 
+크롬의 개발자 도구를 통해서 웹툰이 업데이트가 되었는지 확인을 하고 제목을 가져온다.
+crawling.py 와 update_check.py를 실행하는 방법은 이슈에 설명을 보고 실행을 하면 된다.
