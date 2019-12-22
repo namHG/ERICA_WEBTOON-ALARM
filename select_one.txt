@@ -1,0 +1,4 @@
+If you Copy > Copy selector, you can get this.
+'#content > div.list_area.daily_img > ul > li:nth-child(1) > dl > dt > a'
+And you will use 'ul > li:nth-child(1) > dl > dt > a'.
+In 'li:nth-child(number)' number is webtoon's sequence in day's webtoon page.
