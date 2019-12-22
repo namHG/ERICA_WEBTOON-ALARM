@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=mon'
+url = 'https://comic.naver.com/webtoon/weekdayList.nhn?week=tue'
 html = requests.get(url)
 soup = BeautifulSoup(html.text, 'html.parser')
 update = soup.select_one('em.ico_updt')
@@ -12,6 +12,6 @@ if(update):
     if(update2):
         print(title + " is updated!\n")
     else:
-        print(title + " is not updatede!\n")
+        print("Not updatede!\n")
 else:
-    print(title + " is not updated.\n")
+    print("Not updated.\n")
