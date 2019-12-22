@@ -2,3 +2,8 @@ If you Copy > Copy selector, you can get this.
 '#content > div.list_area.daily_img > ul > li:nth-child(1) > dl > dt > a'
 And you will use 'ul > li:nth-child(1) > dl > dt > a'.
 In 'li:nth-child(number)' number is webtoon's sequence in day's webtoon page.
+number 예시
+월요 전체 웹툰
+신의 탑  number = 1      윈드브레이커 number = 2    뷰티풀 군바리  number = 3
+인생존망 number = 4      평범한 8반   number = 5    귀전구담       number = 6
+...
